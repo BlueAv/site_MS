@@ -4,7 +4,7 @@ body{
     width: 99.35%;
     margin: auto;
     padding: 0px;
-    background-color: whitesmoke;
+    background-color: rgb(230, 230, 230);
     position: absolute;
     
 }
@@ -93,11 +93,13 @@ main{
 .botao-controle{
     font-size: 50pt;
     background-color: transparent;
+    color: white;
     border: none;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
 }
 .botao-controle:hover{
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.952);
+    font-size: 60pt;
 }
 .escolhidos{
     width: 100%;
@@ -194,3 +196,30 @@ footer > div > a{
 footer > div{
     margin: 5px 0px 10px 0px;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+}
+::-webkit-scrollbar:hover{
+    background-color: rgb(210, 210, 210);
+    border-radius: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1FFFFF; 
+    border-radius: 10px;
+    }
+    
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #04B3B3; 
+  }
