@@ -4,7 +4,7 @@ body{
     width: 99.35%;
     margin: auto;
     padding: 0px;
-    background-color: rgb(255, 251, 240);
+    background-color: whitesmoke;
     position: absolute;
     
 }
@@ -14,12 +14,13 @@ header{
     width: 100%;
     height: 60px;
     margin: 0px 0px 30px 0px;
-    padding: 4px;
+    padding: 4px 3px ;
     border-bottom: 1px solid rgb(0, 0, 0);
-    background-color: rgb(250,20,20);
+    background-color: rgb(255, 100, 100);
     align-items: center;
 }
 a > img {
+    padding-top: 5px;
     width: 115px;
 }
 nav > a, span{
@@ -38,7 +39,7 @@ header > nav > span > div{
 header > nav > span:hover > div, .categorias-nav:hover {
     display: block;
     background-color: white;
-    position: absolute;
+    position: fixed;
     color: black;
     text-decoration: none;
     width: 250px;
@@ -51,6 +52,7 @@ header > nav > span:hover > div, .categorias-nav:hover {
 header > nav > span:hover{
     background-color: rgb(255, 118, 118);
     color: #04B3B3;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.507);
 }
 header > nav > span:hover > div > a  {
     color: black;
@@ -60,6 +62,9 @@ header > nav > span:hover > div > a  {
 header > nav > span:hover > div > a:hover{
     text-decoration:underline;
 }
+
+
+
 
 main{
     width: 100%;
@@ -75,10 +80,30 @@ main{
     border: 1px solid black;
     margin: auto;
 }
+#botoes{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.botao-controle{
+    font-size: 50pt;
+    background-color: transparent;
+    border: none;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+}
+.botao-controle:hover{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.952);
+}
 .escolhidos{
     width: 100%;
     margin: 45px 0px;
     padding: 0px;
+    background-color: white;
 }
 h1 {
     font-size: 2em;
@@ -95,7 +120,7 @@ h1 {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.151); 
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.151); 
 }
 .produtos-escolhidos{
     width: 450px;
