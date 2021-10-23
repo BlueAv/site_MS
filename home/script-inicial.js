@@ -26,3 +26,5 @@ function voltar(){ //essa vai voltar uma foto dos destaques (tem realação com 
         foto.src = basefotos[i--];
     }
 }
+
+//FUNÇÃO DE PASSAR AS FOTOS NO BANNER

@@ -19,7 +19,7 @@ header{
     background-color: rgb(255, 100, 100);
     align-items: center;
 }
-a > img {
+a > img { /*logo*/
     padding-top: 5px;
     width: 115px;
 }
@@ -36,10 +36,13 @@ nav > a, span{
 header > nav > span > div{
     display: none;
 }
-header > nav > span:hover > div, .categorias-nav:hover {
+nav {
+    padding-right: 20px;
+}
+header > nav > span:hover > div{ /*aparecer o menu quando passar o mouse por cima*/
     display: block;
     background-color: white;
-    position: fixed;
+    position: absolute;
     color: black;
     text-decoration: none;
     width: 250px;
@@ -48,6 +51,7 @@ header > nav > span:hover > div, .categorias-nav:hover {
     box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.40);
     border-radius: 10px;
     margin: auto;
+    z-index: 1;
 }
 header > nav > span:hover{
     background-color: rgb(255, 118, 118);
@@ -76,19 +80,31 @@ main{
 #destaques{
     width: 80%;
     max-width: 1000px;
-    height: 400px;
-    border: 1px solid black;
+    height: auto;
+    min-height: 100px;
+    border: 1px solid rgb(255, 0, 0);
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#foto-banner {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 200px;
+    height: auto;
     margin: auto;
 }
 #botoes{
     display: flex;
     justify-content: space-between;
-    width: 1000px;
-    height: 400px;
+    width: 80%;
+    max-width: 1000px;
+    min-height: 200px;
+    max-height: 400px;
     position: absolute;
-    align-items: center;
     padding: 0px;
     margin: 0px;
+    align-items: baseline;
 }
 .botao-controle{
     font-size: 50pt;
@@ -96,6 +112,8 @@ main{
     color: white;
     border: none;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+    padding: 0px 3px;
+    margin: 0px;
 }
 .botao-controle:hover{
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.952);
@@ -197,6 +215,7 @@ footer > div{
     margin: 5px 0px 10px 0px;
 }
 
+/*Barra de rolagem*/
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -211,15 +230,17 @@ footer > div{
 /* Track */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
-  }
+}
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #1FFFFF; 
     border-radius: 10px;
-    }
+}
     
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #04B3B3; 
-  }
+}
+
+@media max{}
