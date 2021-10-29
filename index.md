@@ -1,7 +1,3 @@
-## Welcome to GitHub Pages
+Veja o arquivo no link:  site_MS/home/index.html 
 
-You can use the [editor on GitHub](https://github.com/BlueAv/site_MS/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-
-home/index.html
-
+BlueAv.githuib.io/site_MS/
