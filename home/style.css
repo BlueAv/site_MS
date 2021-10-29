@@ -39,6 +39,9 @@ header > nav > span > div{
 nav {
     padding-right: 20px;
 }
+#icone-menu{
+    display: none;
+}
 header > nav > span:hover > div{ /*aparecer o menu quando passar o mouse por cima*/
     display: block;
     background-color: white;
@@ -81,8 +84,6 @@ main{
     width: 80%;
     max-width: 1000px;
     height: auto;
-    min-height: 100px;
-    border: 1px solid rgb(255, 0, 0);
     margin: auto;
     padding: 0px;
     box-sizing: border-box;
@@ -99,12 +100,11 @@ main{
     justify-content: space-between;
     width: 80%;
     max-width: 1000px;
-    min-height: 200px;
+    height: 100%;
     max-height: 400px;
     position: absolute;
     padding: 0px;
     margin: 0px;
-    align-items: baseline;
 }
 .botao-controle{
     font-size: 50pt;
@@ -114,6 +114,7 @@ main{
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
     padding: 0px 3px;
     margin: 0px;
+    line-height: 100%;
 }
 .botao-controle:hover{
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.952);
@@ -165,7 +166,7 @@ h1 {
     margin: auto;
 }
 #nomes-categorias{
-    display: flex;
+    display: inline-flex;
     text-align: center;
     margin: auto;
     width: 97%;
@@ -173,6 +174,8 @@ h1 {
 }
 #nomes-categorias > div, ul{
     margin: 0px 20px;
+    width: 150px;
+    min-width: 150px;
     text-align: center;
     list-style-type: none;
     text-indent: none;
@@ -226,21 +229,65 @@ footer > div{
     background-color: rgb(210, 210, 210);
     border-radius: 10px;
 }
-  
 /* Track */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
-  
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #1FFFFF; 
     border-radius: 10px;
 }
-    
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #04B3B3; 
 }
 
-@media max{}
+@media (max-width: 900px){
+    header{
+        width: 100%;
+        padding: 0px;
+        height: 80px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+    }
+
+    #icone-menu{
+        display: block;
+        padding-right: 5px;
+        text-shadow: -3px 3px 5px black;
+    }
+    nav:hover{
+        display: block;
+    }
+
+
+
+    body{
+        width: 100%;
+    }
+    #destaques{
+        width: 95%;
+    }
+    #botoes{
+        max-height: 150px;
+        width: 95%;
+        font-size: 35pt;
+    }
+    .produtos-escolhidos{
+        width: 350px;
+        height: auto;
+    }
+    #categorias{
+        width: 95%;
+        margin-left: -2px;
+        padding-right: 12px;
+    }
+    #nomes-categorias{
+        display: list-item;
+        list-style: none;
+        width: auto;
+    }
+}

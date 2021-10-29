@@ -1,3 +1,4 @@
+//FUNÇÃO DE PASSAR AS FOTOS NO BANNER
 var basefotos = ['../imagens/arte1000x400.png', '../imagens/arte1000x400(2).png', '../imagens/arte1000x400(3).png']
 
 
@@ -27,4 +28,11 @@ function voltar(){ //essa vai voltar uma foto dos destaques (tem realação com 
     }
 }
 
-//FUNÇÃO DE PASSAR AS FOTOS NO BANNER
+
+//FUNÇÃO DE MOSTRA O MENU
+var menu = document.getElementById('icone-menu');
+menu.addEventListener('click', mostrarmenu)
+function mostrarmenu() {
+    var nav = document.getElementsByTagName('nav')
+    nav.style.background = 'block';
+}
