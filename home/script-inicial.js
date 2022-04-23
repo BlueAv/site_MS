@@ -1,5 +1,5 @@
 //FUNÇÃO DE PASSAR AS FOTOS NO BANNER
-var basefotos = ['../imagens/arte1000x400.png', '../imagens/arte1000x400(2).png', '../imagens/arte1000x400(3).png']
+var basefotos = ['../imagens/arte1000x400.png', '../imagens/arte1000x400(2).png']
 
 
 let foto = document.getElementById('foto-banner');
