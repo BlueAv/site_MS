@@ -1,5 +1,5 @@
 //FUNÇÃO DE PASSAR AS FOTOS NO BANNER
-var basefotos = ['../imagens/arte1000x400.png', '../imagens/arte1000x400(2).png']
+const basefotos = ['../imagens/arte1000x400.png', '../imagens/arte1000x400(2).png']
 
 
 let foto = document.getElementById('foto-banner');
@@ -21,8 +21,8 @@ function avancar() { //nessa função vai avançar uma foto dos destaques (tem r
 
 function voltar(){ //essa vai voltar uma foto dos destaques (tem realação com a variável btnv)
     if (i <= 0){
-        foto.src = basefotos[2];
-        i = 2;
+        foto.src = basefotos[1];
+        i = 1;
     } else if (i > 0) {
         foto.src = basefotos[i--];
     }
